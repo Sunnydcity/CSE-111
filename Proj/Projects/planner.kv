@@ -1,0 +1,40 @@
+<PlannerScreen>:
+    subject_input: subject_input
+    time_input: time_input
+    schedule_display: schedule_display
+
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 10
+        padding: 10
+
+        TextInput:
+            id: subject_input
+            hint_text: 'Enter subject'
+
+        TextInput:
+            id: time_input
+            hint_text: 'Enter time (HH:MM)'
+
+        Label:
+            id: schedule_display
+            text: 'Your schedule will appear here.'
+            size_hint_y: None
+            height: 50
+
+        BoxLayout:
+            size_hint_y: None
+            height: 50
+            spacing: 10
+
+            Button:
+                text: 'Add Schedule'
+                on_press: root.add_schedule()
+
+            Button:
+                text: 'Save Schedule'
+                on_press: root.save_schedule()
+
+            Button:
+                text: 'Load Schedule'
+                on_press: root.load_schedule()

@@ -1,0 +1,80 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+        Interactive Study Planner
+
+2. What real-world problem will your program address or help to solve?
+        The program will help students manage their study schedules effectively by allowing them to input subjects, allocate time blocks, and receive reminders. 
+        It aims to enhance time management and productivity for students.
+
+3. What will you learn from developing this program?
+        How to design and develop a graphical user interface (GUI) using the Kivy module.
+        Event-driven programming in Python.
+        Managing user input and storing data persistently.
+        Testing and debugging GUI-based Python applications.
+
+
+4. What Python modules will your program use?
+
+    (Some examples are: csv, datetime, functools, matplotlib, math,
+    pandas, pytest, random, requests, and tkinter.)
+
+        Kivy (for creating the GUI).
+        Datetime (to manage time and scheduling).
+        Json (to save and load user data).
+        Pytest (for testing).
+
+
+5. List the names of functions you will need?
+
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+        create_schedule(subjects: list, times: list) -> dict
+        Takes user input and creates a schedule.
+        save_schedule(schedule: dict, filename: str) -> None
+        Saves the schedule to a JSON file.
+        load_schedule(filename: str) -> dict
+        Loads a schedule from a JSON file.
+        validate_schedule(subjects: list, times: list) -> bool
+        Validates the schedule's data to ensure no overlap.
+        send_reminder(subject: str, time: datetime) -> None
+        Sends a reminder notification.
+
+    GUI Functions:
+        build_main_screen() -> None
+        Builds the main layout of the app.
+        handle_user_input(subject: str, time: str) -> None
+        Handles user input from the GUI.
+
+
+6. List the names of the test functions you will write.
+        test_create_schedule()
+        Verifies that the schedule creation function works as expected.
+        test_save_schedule()
+        Ensures that data is correctly saved to a JSON file.
+        test_load_schedule()
+        Tests that data is accurately loaded from a file.
+        test_validate_schedule()
+        Confirms that overlapping times are identified.
+        test_send_reminder()
+        Checks that reminders trigger appropriately.
+
+

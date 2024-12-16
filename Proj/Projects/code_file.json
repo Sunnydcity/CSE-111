@@ -1,0 +1,3 @@
+{
+    "code": "def save_schedule(schedule, filename='schedule.json'):\n    with open(filename, 'w') as file:\n        json.dump(schedule, file)\n\ndef load_schedule(filename='schedule.json'):\n    try:\n        with open(filename, 'r') as file:\n            return json.load(file)\n    except FileNotFoundError:\n        return {}"
+}

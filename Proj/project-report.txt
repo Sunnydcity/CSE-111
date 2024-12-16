@@ -1,0 +1,35 @@
+Second Report for a Student Chosen Project
+
+Do the following:
+
+1. In the table below, list the dates, amount of time spent, and
+description of the work that you did on your project. Follow the example
+that is in the first row of the table below. Include the time you spent
+doing any of the following:
+    b. researching by reading articles and watching applicable videos
+    Read tutorials, articles, or documentation (e.g., about Kivy or JSON in Python).
+    Watched videos on relevant concepts like UI design or file handling.
+    f. debugging your code
+    Fixed errors or bugs in your program.
+   Analyzed tracebacks and corrected issues in your logic.
+
+========================================================================
+| Date       | Time Spent (hrs) | Description of Work                  |
+|------------|------------------|--------------------------------------|
+| 2024-12-11 | 2                | Designed program structure and logic |
+| 2024-12-12 | 3                | Coded and tested core functionality  |
+| 2024-12-13 | 2                | Debugged program and fixed errors    |
+| 2024-12-14 | 3                | Final testing and documentation      |
+| 2024-12-15 | 2                | Prepared project report & submission |
+========================================================================
+
+
+
+
+
+
+
+
+2. In Canvas, submit this completed text file, your Python program, your
+Python test file, and any project data files such as .txt and .csv files and
+link to video walkthrough if needed.
